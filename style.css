@@ -3,71 +3,96 @@ body {
     justify-content: center;
     align-items: center;
     height: 90vh;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #f4f4f4;
 }
 
 .container {
     border-radius: 2px;
-    width: 39.4vw;
-    padding: 0px 20px 20px 20px;
+    width: 90%;
+    max-width: 500px;
+    padding: 20px;
     background-color: gainsboro;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.row1,
+.emailAdd,
+.row-tick {
+    margin-bottom: 20px;
 }
 
 .row1 {
-    height: 70px;
     display: flex;
     justify-content: space-between;
-}
-
-.emailAdd {
-    height: 70px;
+    flex-wrap: wrap;
 }
 
 .box1 {
     display: flex;
     flex-direction: column;
+    flex: 1;
+    min-width: 45%;
 }
 
 label {
     font-weight: bold;
+    margin-bottom: 5px;
 }
 
 input {
     border: none;
     border-radius: 2px;
-    width: 262px;
+    width: 95%;
     margin-top: 5px;
-    height: 25px;
+    height: 35px;
+    padding: 5px;
+    box-sizing: border-box;
 }
 
 #email {
-    width: 39vw;
+    width: 97.5%;
 }
 
-
 .row-tick {
-    margin-top: 5px;
     display: flex;
-    width: 40vw;
+    align-items: center;
 }
 
 .row-tick label {
-    margin-top: 1.3px;
+    margin-left: 10px;
     font-size: 14px;
 }
 
 #tick {
-    width: 15px;
+    width: 20px;
     height: 20px;
-    margin-left: 0;
-    margin-top: 0;
-    padding: 0;
 }
 
 button {
-    margin-top: 20px;
-    padding: 8px 25px;
+    width: 100%;
+    padding: 10px;
     background-color: orangered;
     border: none;
     border-radius: 2px;
     color: white;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+@media (max-width: 600px) {
+    .row1 {
+        flex-direction: column;
+    }
+
+    .box1 {
+        min-width: 100%;
+        margin-bottom: 15px;
+    }
+
+    #email {
+        width: 95%;
+    }
 }
