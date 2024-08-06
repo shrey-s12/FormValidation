@@ -1,0 +1,73 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 90vh;
+}
+
+.container {
+    border-radius: 2px;
+    width: 39.4vw;
+    padding: 0px 20px 20px 20px;
+    background-color: gainsboro;
+}
+
+.row1 {
+    height: 70px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.emailAdd {
+    height: 70px;
+}
+
+.box1 {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    font-weight: bold;
+}
+
+input {
+    border: none;
+    border-radius: 2px;
+    width: 262px;
+    margin-top: 5px;
+    height: 25px;
+}
+
+#email {
+    width: 39vw;
+}
+
+
+.row-tick {
+    margin-top: 5px;
+    display: flex;
+    width: 40vw;
+}
+
+.row-tick label {
+    margin-top: 1.3px;
+    font-size: 14px;
+}
+
+#tick {
+    width: 15px;
+    height: 20px;
+    margin-left: 0;
+    margin-top: 0;
+    padding: 0;
+}
+
+button {
+    margin-top: 20px;
+    padding: 8px 25px;
+    background-color: orangered;
+    border: none;
+    border-radius: 2px;
+    color: white;
+}
